@@ -17,6 +17,12 @@ MIT — see [LICENSE](./LICENSE).
 - `src/main/resources/...` — datapack / assets belonging to this module
 - `src/main/java/com/betterenchants/compat/OptionalPrivateHooks.java` — optional detection bridge (safe to delete in forks)
 
+
+## Soft dependencies
+
+- **Touhou Little Maid** (`touhou_little_maid`): optional. Detected at runtime via `MaidCompat` (no hard `depends`). Enchant / combat / talent body hooks skip when the mod is absent.
+- **Touhou totem companion content** (same-author pack): optional. `TouhouCompat` reflects into `TouhouTotemMechanics` when present; otherwise flight gates and totem affix pierce are no-ops.
+
 ## Soft hooks
 
 Call sites that previously hard-referenced private boss / dimension / spell packages now go through `OptionalPrivateHooks`.
