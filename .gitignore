@@ -1,0 +1,17 @@
+.gradle/
+build/
+run/
+out/
+bin/
+.idea/
+*.iml
+.project
+.classpath
+.settings/
+*.log
+*.tmp
+*.bak
+.DS_Store
+Thumbs.db
+gradle.properties.local
+compile_err.txt
